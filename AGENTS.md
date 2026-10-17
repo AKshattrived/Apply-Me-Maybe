@@ -36,3 +36,10 @@
 - For sandbox-related network failures, request approval to retry outside the sandbox before concluding GitHub is unreachable or asking the user to run commands locally.
 - Do not conclude credentials are invalid from sandboxed authentication checks alone. Verify with network access before asking the user to authenticate again.
 - If signing remains blocked, report the blocker and ask how to proceed instead of creating an unsigned commit. Do not rewrite published commits without explicit approval.
+
+## Contribution workflow
+- `main` is protected. Never commit or push directly to `main`, or bypass its ruleset.
+- Before making changes, fetch the latest `origin/main` and create a branch from it named `feature/<github-username>/<feature-branch-name>`.
+- Make the requested changes and signed commits on that feature branch, then push the branch and open a pull request targeting `main`.
+- Include a concise description of the changes and validation in the pull request, and share its link with the user.
+- The repository owner reviews and merges pull requests. Do not merge pull requests or enable auto-merge; wait for review and address requested changes on the same branch.
