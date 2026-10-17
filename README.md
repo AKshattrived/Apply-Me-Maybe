@@ -41,3 +41,14 @@ The initial directories define responsibilities without selecting languages, fra
 | `utilities/page-space/` | Measurement of usable page area, occupied content, and unused space. |
 
 Each directory currently contains only a placeholder. API contracts, the Codex integration, LaTeX compilation environment, measurement method, testing strategy, and handling of personal data remain design decisions. Implementation and setup instructions will be added once tooling is selected.
+
+## How to contribute
+
+`main` is protected. All changes, including contributions from Codex, must go through a pull request.
+
+1. Fetch the latest `origin/main` and create a branch from it named `feature/<github-username>/<feature-branch-name>` (for example, `feature/AKshattrived/contribution-workflow`).
+2. Make your changes and create signed commits on that branch.
+3. Push the branch and open a pull request targeting `main`, with a concise description of the changes and validation performed.
+4. Address review feedback on the same branch. The repository owner will review and merge the pull request.
+
+Do not commit or push directly to `main` or bypass its ruleset. Codex contributors must also follow [AGENTS.md](AGENTS.md).
